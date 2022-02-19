@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/02/demos/01-lambda-expressions/pom.xml" />
+        <option value="$PROJECT_DIR$/03/demos/02-functional-interfaces/pom.xml" />
+        <option value="$PROJECT_DIR$/04/demos/03-streams-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/05/demos/04-streams-advanced/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="openjdk-17" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

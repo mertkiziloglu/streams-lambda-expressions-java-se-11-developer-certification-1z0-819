@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/02/demos/01-lambda-expressions/01-lambda-expressions.iml" filepath="$PROJECT_DIR$/02/demos/01-lambda-expressions/01-lambda-expressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03/demos/02-functional-interfaces/02-functional-interfaces.iml" filepath="$PROJECT_DIR$/03/demos/02-functional-interfaces/02-functional-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04/demos/03-streams-basic/03-streams-basic.iml" filepath="$PROJECT_DIR$/04/demos/03-streams-basic/03-streams-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05/demos/04-streams-advanced/04-streams-advanced.iml" filepath="$PROJECT_DIR$/05/demos/04-streams-advanced/04-streams-advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/streams-lambda-expressions-java-se-11-developer-certification-1z0-819.iml" filepath="$PROJECT_DIR$/.idea/streams-lambda-expressions-java-se-11-developer-certification-1z0-819.iml" />
+    </modules>
+  </component>
+</project>

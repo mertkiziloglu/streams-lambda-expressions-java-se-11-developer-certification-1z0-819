@@ -1,0 +1,3 @@
+# Project exclude paths
+/02/demos/01-lambda-expressions/target/
+/03/demos/02-functional-interfaces/target/

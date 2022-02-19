@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/02/demos/01-lambda-expressions/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02/demos/01-lambda-expressions/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03/demos/02-functional-interfaces/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03/demos/02-functional-interfaces/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04/demos/03-streams-basic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04/demos/03-streams-basic/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05/demos/04-streams-advanced/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05/demos/04-streams-advanced/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
