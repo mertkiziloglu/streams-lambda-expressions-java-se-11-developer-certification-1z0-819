@@ -1,8 +1,4 @@
-/*
- * This code is part of the course "Working with Streams and Lambda Expressions in Java (Java SE 11 Developer Certification 1Z0-819)" for Pluralsight.
- *
- * Copyright (C) 2021 by Jesper de Jong (jesper@jdj-it.com).
- */
+
 package com.kiziloglumert.streamslambdas.examples;
 
 import com.kiziloglumert.streamslambdas.ExampleData;
@@ -43,7 +39,7 @@ public class BasicStreamsExample02 {
         IntStream dice = new Random().ints(1, 7);
 
         // There are more methods in the Java standard library that create streams, for example BufferedReader.lines()
-        try (BufferedReader in = new BufferedReader(new FileReader("README.md", StandardCharsets.UTF_8))) {
+        try (BufferedReader in = new BufferedReader(new FileReader("Readme", StandardCharsets.UTF_8))) {
             in.lines().forEach(System.out::println);
         } catch (IOException e) {
             e.printStackTrace();

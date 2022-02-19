@@ -46,4 +46,22 @@ class LambdasExercise01Test {
                         new Product(Category.UTENSILS, "Plates", new BigDecimal("12.95")),
                         new Product(Category.FOOD, "Spaghetti", new BigDecimal("2.79")));
     }
+
+    //my write up
+    @Test
+    void testSortProductsByName() {
+        List<Product> products = new ArrayList<>(TEST_PRODUCTS);
+
+        exercise.sortProductsByName(products);
+
+        assertThat(products)
+                .describedAs("Exercise 1: Your solution does not return the correct result.")
+                .containsExactly(
+                        new Product(Category.FOOD, "Apples", new BigDecimal("1.29")),
+                        new Product(Category.FOOD, "Coffee", new BigDecimal("7.49")),
+                        new Product(Category.CLEANING, "Detergent", new BigDecimal("3.79")),
+                        new Product(Category.OFFICE, "Pencils", new BigDecimal("5.79")),
+                        new Product(Category.UTENSILS, "Plates", new BigDecimal("12.95")),
+                        new Product(Category.FOOD, "Spaghetti", new BigDecimal("2.79")));
+    }
 }

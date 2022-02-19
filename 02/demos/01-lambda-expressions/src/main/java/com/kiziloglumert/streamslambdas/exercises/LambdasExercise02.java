@@ -1,8 +1,4 @@
-/*
- * This code is part of the course "Working with Streams and Lambda Expressions in Java (Java SE 11 Developer Certification 1Z0-819)" for Pluralsight.
- *
- * Copyright (C) 2021 by Jesper de Jong (jesper@jdj-it.com).
- */
+
 package com.kiziloglumert.streamslambdas.exercises;
 
 import com.kiziloglumert.streamslambdas.Category;
@@ -27,7 +23,13 @@ public class LambdasExercise02 {
     public List<Product> findProductsByCategory(List<Product> products, Category category) {
         // TODO: Implement interface ProductFilter with a lambda expression
         // The lambda expression should return true if the product is in the given category
-        ProductFilter filter = null; // TODO: Replace 'null' by a lambda expression
+        ProductFilter filter = product -> {
+            if (product.getCategory() == category) {
+                return true;
+            }
+            return false;
+        };
+        // TODO: Replace 'null' by a lambda expression
 
         List<Product> result = new ArrayList<>();
         for (Product product : products) {
