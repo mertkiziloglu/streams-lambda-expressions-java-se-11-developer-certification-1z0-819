@@ -20,7 +20,10 @@ public class LambdasExample02 {
                 System.out.println(product);
             }
         }
+
+
     }
+
 
     public static void main(String[] args) {
         List<Product> products = ExampleData.getProducts();
