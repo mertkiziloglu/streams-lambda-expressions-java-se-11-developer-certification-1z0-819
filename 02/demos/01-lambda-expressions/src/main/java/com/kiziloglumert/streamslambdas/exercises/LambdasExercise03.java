@@ -1,6 +1,7 @@
 
 package com.kiziloglumert.streamslambdas.exercises;
 
+import com.kiziloglumert.streamslambdas.ExampleData;
 import com.kiziloglumert.streamslambdas.Product;
 
 import java.math.BigDecimal;
@@ -31,6 +32,7 @@ public class LambdasExercise03 {
             this.products.add(product);
         }
 
+
         /**
          * Exercise 3b: Calculate the total amount of the items in the shopping cart.
          *
@@ -40,11 +42,26 @@ public class LambdasExercise03 {
             BigDecimal total = BigDecimal.ZERO;
 
             // TODO: This solution does not work. Can you explain why?
-//            products.forEach(product -> total.add(product.getPrice()));
+//           products.forEach(product -> total.add(product.getPrice()));
+            BigDecimal finalTotal = total;
+            products.forEach(product -> finalTotal.add(product.getPrice()));
 
-            // TODO: Implement this method in whatever way you like (you don't have to use lambda expressions)
+// TODO: Implement this method in whatever way you like (you don't have to use
+// lambda expressions)
+
+            for (Product product : products) {
+                total = total.add(product.getPrice());
+            }
+            //more sophistice
+            total = products.stream()
+                    .map(Product::getPrice)
+                    .reduce(BigDecimal.ZERO, BigDecimal::add);
 
             return total;
         }
+        // TODO: Implement this method in whatever way you like (you don't have to use lambda expressions)
+
+
+
     }
 }
