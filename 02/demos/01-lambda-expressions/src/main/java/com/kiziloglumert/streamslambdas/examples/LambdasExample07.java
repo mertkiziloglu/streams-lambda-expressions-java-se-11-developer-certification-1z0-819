@@ -48,6 +48,4 @@ public class LambdasExample07 {
         System.out.println(blueberries);
 
     }
-
-
 }

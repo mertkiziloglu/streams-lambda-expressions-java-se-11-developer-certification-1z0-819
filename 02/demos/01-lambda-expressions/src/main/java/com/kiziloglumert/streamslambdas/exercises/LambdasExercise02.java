@@ -1,4 +1,3 @@
-
 package com.kiziloglumert.streamslambdas.exercises;
 
 import com.kiziloglumert.streamslambdas.Category;
