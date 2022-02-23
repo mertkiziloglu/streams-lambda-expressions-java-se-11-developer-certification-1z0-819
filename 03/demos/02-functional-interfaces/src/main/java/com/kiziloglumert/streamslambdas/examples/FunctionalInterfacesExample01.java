@@ -21,9 +21,9 @@ public class FunctionalInterfacesExample01 {
     }
 
     public static void main(String[] args) {
-        List<Product> products = ExampleData.getProducts();
+        List<Product> products = ExampleData.getProducts(); //data check
 
-        String name = "Spaghetti";
+        String name = "Spaghetti";  //name
 
         // A combination of functional interfaces implemented by lambda expressions and method references is used here:
         // - findProduct() takes a Predicate<Product> to find the product with the specified name
