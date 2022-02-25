@@ -15,8 +15,9 @@ public class BasicStreamsExample01 {
         // Streams are lazy - without a terminal operation, no work is done
         // When you call intermediate operations on a stream, you're only building the pipeline;
         // no elements are flowing through it yet
-        Stream<Product> stream = products.stream().map(product -> {
-            System.out.println(product);
+        Stream<Product> stream = products
+                .stream()
+                .map(product -> {System.out.println(product);
             return product;
         });
 

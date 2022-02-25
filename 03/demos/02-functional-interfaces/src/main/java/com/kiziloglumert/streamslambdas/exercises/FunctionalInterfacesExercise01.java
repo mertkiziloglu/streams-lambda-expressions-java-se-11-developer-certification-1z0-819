@@ -23,6 +23,8 @@ public class FunctionalInterfacesExercise01 {
     public List<Product> filterProducts(List<Product> products, /* TODO: Replace 'Object' with a functional interface */ Object f) {
         List<Product> result = new ArrayList<>();
 
+
+
         // TODO: Implement this method. Loop through the list of products, call 'f' to determine if a product should be
         // in the result list, and put it in the result list if appropriate.
 
