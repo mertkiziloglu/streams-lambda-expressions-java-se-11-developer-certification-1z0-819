@@ -22,9 +22,12 @@ public class FunctionalInterfacesExercise01 {
      */
     public List<Product> filterProducts(List<Product> products, /* TODO: Replace 'Object' with a functional interface */ Object f) {
         List<Product> result = new ArrayList<>();
-        result.stream().filter()
-                .map()
-                .forEach();
+        for (Product product : products) {
+            if (f.equals(product)) {
+                result.add(product);
+            }
+        }
+
 
 
         // TODO: Implement this method. Loop through the list of products, call 'f' to determine if a product should be
