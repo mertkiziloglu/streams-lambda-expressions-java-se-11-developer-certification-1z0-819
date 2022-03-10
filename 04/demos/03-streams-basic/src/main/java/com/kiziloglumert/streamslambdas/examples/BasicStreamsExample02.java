@@ -27,7 +27,7 @@ public class BasicStreamsExample02 {
         Stream<String> stream2 = Arrays.stream(array);
 
         // Create a Stream from elements directly
-        Stream<String> stream3 = Stream.of("one", "two", "three");     //.of push in Stream
+        Stream<String> stream3 = Stream.of("one", "two", "three");
 
         // Create a Stream with zero or one elements with ofNullable()
         Stream<String> stream4 = Stream.ofNullable("four");
