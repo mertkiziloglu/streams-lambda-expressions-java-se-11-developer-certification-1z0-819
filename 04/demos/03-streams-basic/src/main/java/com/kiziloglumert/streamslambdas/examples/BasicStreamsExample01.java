@@ -24,8 +24,6 @@ public class BasicStreamsExample01 {
 
         // When you call a terminal operation, the stream will do the work
         stream.forEach(product -> {});
-
-
         //simple used filter
         /*products.stream()
                 .filter(product -> product.getCategory()== Category.FOOD)
