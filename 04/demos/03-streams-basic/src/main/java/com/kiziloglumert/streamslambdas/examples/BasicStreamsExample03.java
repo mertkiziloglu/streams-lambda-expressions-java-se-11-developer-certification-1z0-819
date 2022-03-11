@@ -15,7 +15,7 @@ public class BasicStreamsExample03 {
 
         // The filter() intermediate operation filters elements from the stream
         products.stream()
-                .filter(product -> product.getCategory() == Category.FOOD)
+                .filter(product -> product.getCategory() == Category.FOOD)   //the filter category
                 .forEach(System.out::println);
 
         // The map() intermediate operation does a one-to-one transformation on each element
@@ -28,7 +28,7 @@ public class BasicStreamsExample03 {
         // The streams returned by the calls to the function are "flatted" into a single output stream
         Pattern spaces = Pattern.compile("\\s+");
         products.stream()
-                .flatMap(product -> spaces.splitAsStream(product.getName()))
+                .flatMap(product -> spaces.splitAsStream(product.getName()))  // if you have many elements use the flatmap
                 .forEach(System.out::println);
     }
 }
