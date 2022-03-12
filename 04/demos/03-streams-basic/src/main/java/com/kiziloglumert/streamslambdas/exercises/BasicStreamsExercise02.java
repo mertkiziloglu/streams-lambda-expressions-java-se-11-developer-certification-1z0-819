@@ -25,9 +25,10 @@ public class BasicStreamsExercise02 {
         //
         // Hint: Use the API documentation of interface java.util.stream.Stream.
 
-//        return products.stream()...;
-
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+        return products.stream()
+                .filter(product -> product.getCategory().equals(category))
+                .map(Product::getName)
+                .collect(java.util.stream.Collectors.toList());
     }
 
     /**
@@ -46,8 +47,10 @@ public class BasicStreamsExercise02 {
         //
         // Hint: You'll need to use different mapping methods.
 
-//        return categories...;
-
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+        return categories
+                .map(productsByCategory::get)//get the products for each category
+                .flatMap(List::stream)  // flatMap() is used to flatten the stream of lists
+                .map(Product::getName)// map() is used to transform each element in the stream
+                .collect(java.util.stream.Collectors.toList());
     }
 }

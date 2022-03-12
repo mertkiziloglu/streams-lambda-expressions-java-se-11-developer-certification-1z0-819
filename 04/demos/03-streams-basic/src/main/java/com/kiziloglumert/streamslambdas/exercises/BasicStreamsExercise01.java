@@ -1,5 +1,6 @@
 package com.kiziloglumert.streamslambdas.exercises;
 
+import com.kiziloglumert.streamslambdas.Category;
 import com.kiziloglumert.streamslambdas.Product;
 
 import java.util.List;
@@ -14,15 +15,17 @@ public class BasicStreamsExercise01 {
      */
     public List<Product> findUtensilsSortedByName(List<Product> products) {
         // TODO: Add three stream operation methods:
-        //
         // 1) Find the products that are in the category UTENSILS
         // 2) Sort them by name
         // 3) Collect the result into a List
         //
         // Hint: Use the API documentation of interface java.util.stream.Stream.
 
-//        return products.stream()...;
+        return products.stream()
+                .filter(product -> product.getCategory() == Category.UTENSILS)
+                .sorted((product1, product2) -> product1.getName().compareTo(product2.getName()))
+                .collect(java.util.stream.Collectors.toList());
 
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+
     }
 }

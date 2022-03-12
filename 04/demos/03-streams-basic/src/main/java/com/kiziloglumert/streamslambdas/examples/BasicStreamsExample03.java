@@ -7,6 +7,7 @@ import com.kiziloglumert.streamslambdas.Product;
 
 import java.util.List;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 public class BasicStreamsExample03 {
 
@@ -28,7 +29,9 @@ public class BasicStreamsExample03 {
         // The streams returned by the calls to the function are "flatted" into a single output stream
         Pattern spaces = Pattern.compile("\\s+");
         products.stream()
-                .flatMap(product -> spaces.splitAsStream(product.getName()))  // if you have many elements use the flatmap fuckkkkkkkkkkkk
+                .flatMap(product -> spaces.splitAsStream(product.getName()))
                 .forEach(System.out::println);
+
+
     }
 }

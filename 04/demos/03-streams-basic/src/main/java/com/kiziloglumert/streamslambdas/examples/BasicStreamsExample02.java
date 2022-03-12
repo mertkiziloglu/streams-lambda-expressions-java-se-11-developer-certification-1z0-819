@@ -39,10 +39,10 @@ public class BasicStreamsExample02 {
         IntStream dice = new Random().ints(1, 7);
 
         // There are more methods in the Java standard library that create streams, for example BufferedReader.lines()
-        try (BufferedReader in = new BufferedReader(new FileReader("Readme", StandardCharsets.UTF_8))) {
+       /* try (BufferedReader in = new BufferedReader(new FileReader("Readme", StandardCharsets.UTF_8))) {
             in.lines().forEach(System.out::println);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
