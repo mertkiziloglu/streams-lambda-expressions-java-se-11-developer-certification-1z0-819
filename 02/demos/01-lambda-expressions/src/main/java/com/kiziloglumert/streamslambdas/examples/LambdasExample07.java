@@ -30,6 +30,7 @@ public class LambdasExample07 {
         // A method reference can refer to a static method, an instance method or a constructor.
 
         // Method reference to a static method.
+        //products.removeIf(LambdasExample07::isExpensive);
         products.removeIf(product -> isExpensive(product));
 
 
