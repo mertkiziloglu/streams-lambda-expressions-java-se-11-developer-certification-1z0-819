@@ -24,8 +24,8 @@ public class LambdasExample04 {
             }
         }
 
-    /*    // Because local variables are effectively final, you cannot modify them inside a lambda expression.
-      products.forEach(product -> {
+        // Because local variables are effectively final, you cannot modify them inside a lambda expression.
+   /*   products.forEach(product -> {
            if (product.getPrice().compareTo(priceLimit) < 0) {
                numberOfCheapProducts++; // Error: Variable must be effectively final
            }
