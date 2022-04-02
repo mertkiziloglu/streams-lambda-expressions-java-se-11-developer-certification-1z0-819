@@ -40,7 +40,7 @@ public class LambdasExample07 {
         // - System.out::println refers to an instance method of class PrintStream, for a particular PrintStream object;
         //   the one that the variable System.out refers to. forEach() calls the println() method on that PrintStream
         products.stream()
-                .map(Product::getName).
+                .map(product -> product.getName()).
                 forEach(System.out::println);
 
         // A method reference with 'new' after the double colon refers to a constructor.
