@@ -30,11 +30,7 @@ public class FunctionalInterfacesExercise03 {
      * @return The result of applying the operation to the two input values.
      */
     public double calculate(double a, double b, ArithmeticOperation operation) {
-        // TODO: Implement this method; apply the appropriate operation on the values a and b.
-        // Note: This is a one-liner. You don't need a switch statement, for example.
-//
-//        return ...;
 
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+        return operation.getOperator().applyAsDouble(a, b);
     }
 }
