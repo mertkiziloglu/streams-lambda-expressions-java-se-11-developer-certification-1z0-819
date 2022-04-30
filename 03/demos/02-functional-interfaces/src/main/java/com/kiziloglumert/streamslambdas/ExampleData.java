@@ -40,6 +40,8 @@ public class ExampleData {
             new Product(FOOD, "Coffee", new BigDecimal("7.49")),
             new Product(OFFICE, "Highlighter", new BigDecimal("2.29")),
             new Product(FOOD, "Orange juice", new BigDecimal("3.49")),
+            new Product(FOOD, "testg", new BigDecimal("3.49")),
+            new Product(FOOD, "test", new BigDecimal("3.49")),
             new Product(FOOD, "Spring water", new BigDecimal("0.99")));
 
     public static List<Product> getProducts() {
