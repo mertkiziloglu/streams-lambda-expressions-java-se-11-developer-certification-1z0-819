@@ -15,7 +15,7 @@ public class AdvancedStreamsExample01 {
         // The first version of iterate() takes a seed value and an unary operator and generates an infinite stream of values
         // by first returning the seed, and then applying the operator to each previous element, so the stream
         // will contain: seed, f(seed), f(f(seed)), etc.
-        Stream<BigInteger> powersOfTwo = Stream.iterate(BigInteger.ONE, n -> n.multiply(BigInteger.TWO));
+        Stream<BigInteger> powersOfTwo = Stream.iterate(BigInteger.ONE, n -> n.multiply(BigInteger.TWO));  //iterate ?
         powersOfTwo.limit(20).forEach(System.out::println);
 
         // The second version of iterate() takes an extra parameter, which is a predicate that indicates if there is a next element
