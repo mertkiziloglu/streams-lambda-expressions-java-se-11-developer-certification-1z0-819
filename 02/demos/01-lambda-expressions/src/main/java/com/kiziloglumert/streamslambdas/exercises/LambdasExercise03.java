@@ -50,7 +50,7 @@ public class LambdasExercise03 {
 // lambda expressions)
 
             for (Product product : products) {
-                total = total.add(product.getPrice());
+                total = total.add(product.getPrice());   //ic parantez map get price yapiyor dis taraf ise totale eklior
             }
             //more sophistice
             total = products.stream()
