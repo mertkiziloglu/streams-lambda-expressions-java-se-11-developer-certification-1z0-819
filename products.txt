@@ -28,3 +28,5 @@ FOOD       Coffee           $   7.49
 OFFICE     Highlighter      $   2.29
 FOOD       Orange juice     $   3.49
 FOOD       Spring water     $   0.99
+FOOD       Cold water       $   0.99
+FOOD       Hot water        $   0.99
