@@ -20,9 +20,12 @@ public class AdvancedStreamsExercise01 {
         // What is the purpose of each of these three functions and how do you implement them? (Consult the API documentation).
         // Use method references or lambda expressions to implement the three functions.
 
-//        return products.stream()
-//                .collect(...);
+        return products.stream()
+                .collect(
+                        () -> new java.util.TreeSet<String>(),
+                        (set, product) -> set.add(product.getName()),
+                        (set1, set2) -> set1.addAll(set2)
+                );
 
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
     }
 }

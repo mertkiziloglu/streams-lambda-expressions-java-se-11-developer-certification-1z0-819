@@ -15,13 +15,11 @@ public class AdvancedStreamsExample03 {
         // You can reduce stream elements into an ArrayList with reduce(), but this is inefficient because reduce()
         // is designed for the result container to be immutable; so you need to create intermediate lists and
         // copy elements between them.
-        List<String> productNames1 = products.stream().reduce(
-                new ArrayList<>(),
-                (list, product) -> {
+        List<String> productNames1 = products.stream()
+                .reduce(new ArrayList<>(), (list, product) -> {
                     ArrayList<String> newList = new ArrayList<>(list);
                     newList.add(product.getName());
-                    return newList;
-                },
+                    return newList;},
                 (list1, list2) -> {
                     ArrayList<String> newList = new ArrayList<>(list1);
                     newList.addAll(list2);
