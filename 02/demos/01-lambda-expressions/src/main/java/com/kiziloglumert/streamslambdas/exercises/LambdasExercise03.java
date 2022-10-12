@@ -22,7 +22,7 @@ public class LambdasExercise03 {
     public ShoppingCartFactory getShoppingCartFactory() {
         // TODO: Implement interface ShoppingCartFactory by using a method reference
         // Note: Don't implement ShoppingCartFactory with an anonymous class
-        return null; // Replace 'null' by your solution
+        return ShoppingCart::new;
     }
 
     public static class ShoppingCart {

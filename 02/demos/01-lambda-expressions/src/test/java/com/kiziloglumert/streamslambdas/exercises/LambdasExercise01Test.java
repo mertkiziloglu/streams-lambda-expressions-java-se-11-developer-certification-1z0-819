@@ -34,7 +34,7 @@ class LambdasExercise01Test {
     void sortProductsByName() {
         List<Product> products = new ArrayList<>(TEST_PRODUCTS);
 
-        exercise.sortProductsByName(products);
+        exercise.sortProductsByName(products);   //mock test ile yaparsan da bunu when icinde kullan ve ne dondugunu test et
 
         assertThat(products)
                 .describedAs("Exercise 1: Your solution does not return the correct result.")

@@ -22,7 +22,7 @@ public class LambdasExercise02 {
     public List<Product> findProductsByCategory(List<Product> products, Category category) {
         // TODO: Implement interface ProductFilter with a lambda expression
         // The lambda expression should return true if the product is in the given category
-        ProductFilter filter =product -> product.getCategory().compareTo(category)==0;
+        ProductFilter filter = product -> product.getCategory().compareTo(category)==0;
         // TODO: Replace 'null' by a lambda expression
 
         List<Product> result = new ArrayList<>();
