@@ -11,7 +11,7 @@ import java.util.function.Predicate;
 public class FunctionalInterfacesExample01 {
 
     // Go through a list of products, and return the first product for which the predicate returns true.
-    static Optional<Product> findProduct(List<Product> products, Predicate<Product> predicate) {
+    static Optional<Product> findProduct(List<Product> products, Predicate<Product> predicate) {//optional kullanim
         for (Product product : products) {
             if (predicate.test(product)) {
                 return Optional.of(product);
@@ -34,7 +34,7 @@ public class FunctionalInterfacesExample01 {
 
         findProduct(products, product -> product.getName().equals(name))
                 .map(Product::getPrice)
-                .ifPresentOrElse(
+                .ifPresentOrElse( //ifpresentorelse
                         price -> System.out.printf("The price of %s is $ %.2f%n", name, price),
                         () -> System.out.printf("%s is not available%n", name));
     }
