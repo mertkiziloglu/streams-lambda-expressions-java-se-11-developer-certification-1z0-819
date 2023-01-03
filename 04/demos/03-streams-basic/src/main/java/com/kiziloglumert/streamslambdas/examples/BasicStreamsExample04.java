@@ -19,8 +19,7 @@ public class BasicStreamsExample04 {
         Optional<Product> opt = products.stream()
                 .filter(product -> product.getCategory() == Category.OFFICE)
                 .findFirst();
-        opt.ifPresent(System.out::println);
-
+        opt.ifPresent(System.out::println); // if present
         // If you only want to check if the stream contains an element that matches your search criteria,
         // then you can use anyMatch(), which will return a boolean result
         // Unlike findFirst() and findAny(), you don't have to filter first - anyMatch() takes a Predicate
