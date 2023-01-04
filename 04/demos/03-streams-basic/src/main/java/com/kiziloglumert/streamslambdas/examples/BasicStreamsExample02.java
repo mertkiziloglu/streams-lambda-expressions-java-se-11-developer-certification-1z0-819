@@ -11,6 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -37,6 +38,7 @@ public class BasicStreamsExample02 {
 
         // Returns an infinite stream of random numbers between 1 (inclusive) and 7 (exclusive)
         IntStream dice = new Random().ints(1, 7);
+        DoubleStream doubleStream = new Random().doubles(1L,7L);
 
         // There are more methods in the Java standard library that create streams, for example BufferedReader.lines()
        /* try (BufferedReader in = new BufferedReader(new FileReader("Readme", StandardCharsets.UTF_8))) {

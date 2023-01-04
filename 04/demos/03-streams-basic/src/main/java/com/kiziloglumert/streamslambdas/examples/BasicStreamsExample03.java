@@ -35,7 +35,7 @@ public class BasicStreamsExample03 {
         // The streams returned by the calls to the function are "flatted" into a single output stream
         Pattern spaces = Pattern.compile("\\s+");
         products.stream()
-                .flatMap(product -> spaces.splitAsStream(product.getName()))
+                .flatMap(product -> spaces.splitAsStream(product.getName()))//flatmap look
                 .forEach(System.out::println);
 
 
