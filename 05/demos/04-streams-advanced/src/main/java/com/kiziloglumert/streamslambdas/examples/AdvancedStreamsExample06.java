@@ -20,7 +20,7 @@ public class AdvancedStreamsExample06 {
         // and the stream elements are divided into two groups.
         // The result is a map with two entries, with boolean values 'true' and 'false' as keys.
         Map<Boolean, List<Product>> partitionedProducts = products.stream()
-                .collect(Collectors.partitioningBy(product -> product.getPrice().compareTo(priceLimit) < 0));
+                .collect(Collectors.partitioningBy(product -> product.getPrice().compareTo(priceLimit) < 0));//partitioningBy
 
         System.out.println("Cheap products: ");
         partitionedProducts.get(true).forEach(System.out::println);
